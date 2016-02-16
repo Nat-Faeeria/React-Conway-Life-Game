@@ -8,15 +8,19 @@ export class Cell extends React.Component {
         this.props.callback(this.props.value);
     }
     render(){
-        let styles = {height: "18px",width: "18px",
-            backgroundColor: "grey", border: "solid black 1px",
-            margin: "0px"};
         if (this.props.alive) {
-            styles.backgroundColor = "blue";
+            return (
+                <div className={classFull} onClick={this.handleClick}>
+                </div>
+            );
+        } else {
+            return (
+                <div className={classEmpty} onClick={this.handleClick}>
+                </div>
+            );
         }
-        return(
-            <div style={styles} onClick={this.handleClick}>
-            </div>
-        );
     }
 }
+
+const classEmpty = "empty-cell";
+const classFull = "full-cell";

@@ -1,0 +1,43 @@
+body {
+    max-width: 1350px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.board {
+    width: 1000px;
+    height: 640px;
+}
+
+.border {
+    width: 349px;
+}
+
+.full-cell {
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+    background-color: #3269A8;
+    border: 1px solid black;
+}
+
+.empty-cell {
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+    background-color: #7FAE7C;
+    border: 1px solid black;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
