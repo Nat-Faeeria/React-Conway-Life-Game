@@ -110,6 +110,19 @@ export class Game extends React.Component {
 
         this.setState({cells: cells});
     }
+    floweringInit = () => {
+        let cells = this.getEmptyArray();
+        cells[722]=true;
+        cells[772]=true;
+        cells[773]=true;
+        cells[822]=true;
+        cells[824]=true;
+        cells[872]=true;
+        cells[873]=true;
+        cells[874]=true;
+        cells[875]=true;
+        this.setState({cells: cells});
+    }
     render(){
         let cells = this.state.cells.map((state, index) => {
             return <Cell key={index} value={index} alive={state} callback={this.changeState} />;
@@ -124,6 +137,7 @@ export class Game extends React.Component {
                     <button className={btnClass} onClick={this.stopLoop}>Stop loop</button>
                     <button className={btnClass} onClick={this.clear}>Clear</button>
                     <button className={btnClass} onClick={this.gosperGliderInit}>Gosper Glider</button>
+                    <button className={btnClass} onClick={this.floweringInit}>Simple flowering</button>
                 </div>
                 <div>
                     <GameBoard>
