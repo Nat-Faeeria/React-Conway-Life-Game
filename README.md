@@ -4,3 +4,5 @@ I'm beginning with React, so things aren't optimised, but I'll try to improve th
 Please criticize objectively
 
 Run the game localy with npm start, or run the bundle script to build it.
+
+A live version is hosted there : http://reactlifegame.ga/
