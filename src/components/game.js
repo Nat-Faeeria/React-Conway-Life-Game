@@ -132,12 +132,18 @@ export class Game extends React.Component {
                 <div className="border">
                     <h3 className="margin-left">React Conway's Life game</h3>
                     <p className="margin-left">A quick implementation of Conway's Life game with Facebook's React</p>
+                    <p className="margin-left">Click anywhere on the board, then click on next if you want to see your cells evolve step by step, or on loop if you want them to evolve on their own. The clear button will destroy every cells on the board, and the other buttons are preset patterns.</p>
                     <button className={btnClass} onClick={this.next}>Next</button>
                     <button className={btnClass} onClick={this.loop}>Loop</button>
                     <button className={btnClass} onClick={this.stopLoop}>Stop loop</button>
                     <button className={btnClass} onClick={this.clear}>Clear</button>
+                    <h5 className="margin-left">Preset patterns : </h5>
                     <button className={btnClass} onClick={this.gosperGliderInit}>Gosper Glider</button>
                     <button className={btnClass} onClick={this.floweringInit}>Simple flowering</button>
+                    <br />
+                    <br />
+                    <br />
+                    <p className="margin-left">Sources are available <a target="_blank" href="https://github.com/Nat-Faeeria/React-Conway-Life-Game">here</a></p>
                 </div>
                 <div>
                     <GameBoard>
